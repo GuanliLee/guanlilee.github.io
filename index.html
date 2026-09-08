@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>李观丽 Guanli Li | VLA · 机器人操作 · 具身智能</title><meta name="description" content="李观丽的个人学术与求职主页。华南理工大学电子信息硕士研究生，聚焦 VLA、π₀.₅ 与 GR00T 任务适配、机器人操作数据构建和真机系统开发。"><link rel="stylesheet" href="style.css"></head><body><a class="skip-link" href="#about">跳转到主要内容</a>
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="wordmark" href="#top">Guanli Li<span>李观丽</span></a>
+    <nav aria-label="页面导航"><a href="#about">关于</a><a href="#research">研究</a><a href="#experience">经历</a><a href="#publications">论文</a><a href="#education">教育</a><a href="#awards">荣誉</a></nav>
+  </div>
+</header>
+<div class="academic-shell"><aside class="profile-sidebar" aria-labelledby="name">
+ <img class="portrait" src="./portrait.jpeg" width="152" height="196" alt="李观丽个人照片" fetchpriority="high">
+ <div class="profile-identity">
+  <h1 id="name">李观丽<span>Guanli Li</span></h1>
+  <p class="profile-affiliation">华南理工大学<br>电子信息 · 硕士研究生</p>
+  <p class="profile-direction">机器人操作 · 具身智能<br>视觉语言动作模型（VLA）</p>
+ </div>
+ <div class="profile-links" aria-label="联系与学术平台">
+  <a href="mailto:guanlilee1016@163.com"><span>Email</span><span aria-hidden="true">↗</span></a>
+  <a href="https://scholar.google.com.hk/citations?user=_re0B1UAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer"><span>Google Scholar</span><span aria-hidden="true">↗</span></a>
+  <a href="https://github.com/GuanliLee/" target="_blank" rel="noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+  <a href="https://huggingface.co/Guanli001" target="_blank" rel="noreferrer"><span>Hugging Face</span><span aria-hidden="true">↗</span></a>
+ </div>
+</aside><main class="page-shell">
+  <section class="about-section" id="about" aria-labelledby="about-title">
+ <p class="eyebrow">ROBOT LEARNING &amp; MANIPULATION</p>
+ <h2 id="about-title">关于我<span class="section-english">About Me</span></h2>
+ <p>目前就读于<strong>华南理工大学电子信息专业</strong>，攻读硕士学位。本科毕业于华南农业大学人工智能专业，以专业第一的成绩获得推免资格。</p>
+ <p>研究兴趣包括<strong>机器人操作、视觉语言动作模型（VLA）、世界模型与强化学习</strong>。目前围绕货架补货等操作任务，开展 π₀.₅ 模型适配、操作数据构建与真机验证，关注从感知、规划到策略执行的完整流程。</p>
+ <p class="job-focus"><span>求职方向</span>机器人操作 / 具身智能 / VLA 算法</p>
+</section><div class="evidence-strip" aria-label="代表成果"><a href="#awards"><strong>4 次国家奖学金</strong><span class="evidence-caption">硕士 1 次 · 本科 3 次</span></a><a href="#robotac-award"><strong>全国一等奖</strong><span class="evidence-caption">ROBOTAC 创新挑战赛 · 单臂组<br>团队竞赛成果</span></a><a href="#robomaster-award"><strong>全国一等奖</strong><span class="evidence-caption">RoboMaster 2022 · 全国赛<br>团队竞赛成果</span></a></div><section class="chapter" id="research" aria-labelledby="research-title">
+    <div class="chapter-heading"><h2 id="research-title">代表项目<span class="section-english">Selected Projects</span></h2></div>
+    <div class="chapter-body">
+      <article class="project-entry featured-project" id="vla-project">
+        <figure class="project-figure">
+ <div class="method-plate">
+  <p class="plate-heading">VISION · LANGUAGE · ACTION</p>
+  <ol class="method-steps">
+   <li>多视角图像 · 任务语言<br>机器人状态</li>
+   <li class="model-step"><strong>π₀.₅</strong>任务微调与策略推理</li>
+   <li>动作预测<br>真机执行与验证</li>
+  </ol>
+  <p class="method-feedback">失败分析 → 补充示教 → 模型更新</p>
+ </div>
+ <figcaption>研究方法概览 · 当前采用 π₀.₅ base</figcaption>
+</figure><div class="project-copy"><p class="project-label">VLA · ROBOT LEARNING</p><div class="entry-heading"><h3>面向货架补货的视觉语言动作策略研究</h3><time>2024.09 — 至今</time></div><div class="item-meta"><span>硕士研究课题 · 在研 · VLA / π₀.₅ base</span></div><p class="project-summary">面向货架补货中的长时序抓取与放置任务，构建多模态操作数据，基于 π₀.₅ base 开展任务微调、接口适配与真机验证。</p><ul class="project-points">
+ <li>完成观测输入、动作表示与机械臂控制接口适配。</li>
+ <li>通过轨迹质量审核、真机验证和补充示教迭代策略。</li>
+</ul><div class="project-notes"><p class="detail-heading">数据处理与方法细节</p><ul class="work-points">
+ <li><strong>感知与数据：</strong>构建 YOLO-World、SAM 与 GraspNet 感知流程；对多视角图像、机器人状态和控制指令进行时间对齐、轨迹切分与质量审核，结合任务语言描述整理训练数据。</li>
+ <li><strong>策略与真机：</strong>开展 π₀.₅ 模型微调，适配观测输入、动作表示与机械臂控制接口；通过真机验证、失败分析和补充示教迭代货架补货策略。</li>
+</ul></div></div></article>
+      <article class="project-entry featured-project" id="robotac-project">
+        <div class="project-gallery"><figure class="project-figure robot-photo">
+ <img src="./robotac-real-robot.jpg" width="720" height="1080" alt="单臂机器人末端、视觉传感器与夹爪的比赛现场照片" loading="lazy">
+ <figcaption>ROBOTAC 全国总决赛现场 · 单臂机器人末端实拍</figcaption>
+</figure><figure class="project-figure">
+ <img src="./robotac-calibration.jpg" width="640" height="400" alt="Robotac 单臂机器人真机实验：腕部相机拍摄棋盘格，彩色点标示检测到的标定角点" loading="lazy">
+ <figcaption>腕部相机标定实验：棋盘格角点检测与重投影校验。</figcaption>
+</figure></div><div class="project-copy"><p class="project-label">MOBILE MANIPULATION · REAL ROBOT</p><div class="entry-heading"><h3>面向物料转运的单臂移动机器人自主操作系统</h3><time>2026.07 — 2026.09</time></div><div class="item-meta"><span class="award-highlight">队长 · 团队获第25届 ROBOTAC 创新挑战赛全国一等奖（单臂组）</span></div><p class="project-summary">基于 Bobac 单臂移动机器人，完成初赛仿真验证与总决赛真机联调，集成自主导航、物料定位、手眼标定和抓放执行。</p><ul class="project-points">
+ <li>YOLOE + RGB-D + PCA 完成物料定位与抓取姿态估计。</li>
+ <li>标定平移闭环 RMS <strong>1.492 mm</strong>；平均重投影误差 <strong>0.165 px</strong>。</li>
+</ul><div class="project-notes"><p class="detail-heading">仿真与真机实现细节</p><ul class="work-points">
+ <li><strong>仿真与真机联调：</strong>基于 Bobac 单臂移动机器人，完成初赛 Isaac Sim / ROS 2 / Nav2 仿真验证，以及总决赛的硬件接口适配与真机任务联调。</li>
+ <li><strong>视觉定位与标定：</strong>结合 YOLOE、RGB-D 与 PCA 实现物料定位和抓取姿态估计；完成腕部相机手眼标定，标定平移闭环 RMS 为 <strong>1.492 mm</strong>，平均重投影误差为 <strong>0.165 px</strong>。</li>
+ <li><strong>导航与抓放执行：</strong>集成建图、AMCL 定位与目标点导航，结合逆运动学、关节限位和工作空间检查，打通预抓取、夹持、转运、放置与复位流程。</li>
+</ul></div></div></article>
+      <div class="compact-projects"><article class="project-entry" id="dual-arm-project"><div class="entry-heading"><h3>双臂机器人仿真与避障抓取</h3><time>2025.10 — 2026.01</time></div><div class="item-meta"><span>AI Robot 仿真开发挑战赛 · 团队获一等奖</span></div><p>在 Isaac Sim 中配置激光雷达、里程计与 TF 通信，打通 ROS 2 仿真链路；基于双目相机完成目标检测与 6D 位姿解算，使用 cuRobo 实现双臂逆运动学求解和避障抓取规划。</p></article><article class="project-entry" id="retail-project"><div class="entry-heading"><h3>智慧零售服务机器人</h3><time>2021.11 — 2022.05</time></div><div class="item-meta"><span>世界机器人大赛总决赛 · 团队获一等奖</span></div><p>基于 SSD 开展物品识别模型训练，打通 ROS 2 图像消息与 OpenCV 的转换、推理及结果发布；集成激光导航、机械臂控制和语音交互，支持语音指令触发的自主抓取。</p></article>
+    </div><div class="additional-content"><p class="detail-heading">其他项目：茶芽密度监测、苹果糖度检测</p><div class="additional-body"><article class="project-entry" id="tea-bud-project"><div class="entry-heading"><h3>基于图像的茶芽密度实时监测</h3><time>2022.12 启动</time></div><div class="item-meta"><span>本科科研项目</span></div><p>负责项目统筹与系统开发，在茶叶嫩芽图像数据上训练识别模型，将茶芽识别、密度计数与密度分布反演集成至在线检测系统，开展算法训练、系统集成及论文撰写工作。</p></article><article class="project-entry" id="apple-spectroscopy-project"><div class="entry-heading"><h3>近红外光谱苹果糖度检测与分级</h3><time>2021.04 — 2022.11</time></div><div class="item-meta"><span>本科科研项目</span></div><p>围绕近红外光谱与苹果糖度的关系，制定并实施实验方案，参与智能检测装置设计。比较不同机器学习回归算法，建立光谱到糖度的预测模型，并承担论文撰写工作。</p></article></div></div></div>
+  </section>
+
+  <section class="chapter" id="experience" aria-labelledby="experience-title">
+    <div class="chapter-heading"><h2 id="experience-title">实习经历<span class="section-english">Experience</span></h2></div>
+    <div class="chapter-body timeline">
+      <article class="experience-item current" id="idata-experience"><div class="entry-heading"><h3>iData <span class="job-title">具身智能算法实习生</span></h3><time>2026.07 — 至今</time></div><div class="item-meta"><span>深圳盈达信息科技有限公司 · 具身智能 Lab</span></div><ul class="work-points">
+ <li><strong>数据工程：</strong>搭建机器人自动数据采集系统，基于 Piper 采集并审核 <strong>2,000+ 条有效操作轨迹</strong>，覆盖不同 SKU、姿态、遮挡与堆叠场景。</li>
+ <li><strong>策略迭代：</strong>开展 π₀.₅ / GR00T N1.6 训练与测试，利用仿真和真机数据联合训练；引入 DAgger 专家纠正回流，以及异常检测、安全复位与重试机制。</li>
+</ul><div class="project-notes"><p class="detail-heading">采集系统、联合训练与纠错流程</p><ul class="work-points">
+ <li><strong>自动采集与数据集：</strong>搭建从感知、抓取位姿筛选、避障规划到真机执行及结果校验的采集系统；基于 Piper 采集并审核 <strong>2,000+ 条有效操作轨迹</strong>，覆盖不同 SKU、姿态、遮挡与堆叠场景，采集数据有效率为 <strong>99%</strong>。</li>
+ <li><strong>VLA 训练与任务适配：</strong>围绕 π₀.₅ base 开展任务适配、模型训练与真机推理迭代，并开展 GR00T N1.6 训练与测试；基于 Isaac Sim 采集商超场景数据，校准感知与执行差异，结合仿真和真机数据开展 VLA 联合训练。</li>
+ <li><strong>失败恢复与数据回流：</strong>设计异常检测、失败中止、安全复位与重试流程；引入 DAgger，在策略执行过程中采集专家纠正动作，回流训练集并更新策略。</li>
+</ul></div><div class="resource-links"><a href="https://github.com/GuanliLee/isaacsim-graspnet-ros2-pipeline" target="_blank" rel="noreferrer">仿真抓取管线 ↗</a><a href="https://github.com/GuanliLee/yoloE_SAM_graspnet-moveit-ros2bridge" target="_blank" rel="noreferrer">感知与抓取集成 ↗</a><a href="https://github.com/GuanliLee/moveit_path_planning" target="_blank" rel="noreferrer">运动规划 ↗</a></div></article>
+      <article class="experience-item" id="turing-experience"><div class="entry-heading"><h3>图灵智新 <span class="job-title">具身智能研发实习生</span></h3><time>2025.12 — 2026.06</time></div><div class="item-meta"><span>广东图灵智新技术有限公司 · 机器人 Lab</span></div><ul class="work-points"><li><strong>VLA 抓放任务：</strong>基于 GR00T N1.6 开展 SO-101 机械臂在 Isaac Sim 与真机上的抓取放置开发，针对感知、执行、物理参数与场景建模差异进行适配。</li>
+<li><strong>机器人平台：</strong>参与 RoboStudio 低代码平台研发，负责能力节点与视觉算法统一接口，接入 YOLO、SAM、GraspNet、DexGraspNet，支持感知、决策、控制模块的任务编排。</li></ul><div class="project-notes"><p class="detail-heading">工业视觉、导航与堆叠任务</p><ul class="work-points">
+ <li>开发 YOLO26 工业脏污巡检系统，完成模型训练与部署，识别准确率达 <strong>95%+</strong>。</li>
+ <li>开展 Unitree Go2 强化学习导航策略训练与<strong>仿真验证</strong>。</li>
+ <li>基于行为克隆（BC）训练机械臂堆叠策略，堆叠任务成功率为 <strong>96%</strong>，完成专家轨迹复现与策略迁移。</li>
+</ul></div><a class="text-link" href="https://github.com/GuanliLee/YOLO26-Stain-Detection" target="_blank" rel="noreferrer">YOLO26-Stain-Detection ↗</a></article>
+      <article class="experience-item"><div class="entry-heading"><h3>算法实习生</h3><time>2025.02 — 2025.09</time></div><div class="item-meta"><span>广东省计算技术应用研究所 · 南方电网合作项目</span></div><p>构建灾害链状态预测模型，结合 SAC 设计动态资源调度策略，完成多维灾害脆弱性建模与预测—决策流程开发。</p></article>
+    </div>
+  </section>
+
+  <section class="chapter" aria-labelledby="skills-title" id="skills">
+  <div class="chapter-heading"><h2 id="skills-title">技术能力<span class="section-english">Technical Skills</span></h2></div><dl class="skills-list">
+    <div><dt>VLA 与数据</dt><dd>π₀.₅ · GR00T N1.6 · 多模态轨迹对齐 · DAgger 数据聚合 · 真机推理与失败恢复</dd></div><div><dt>机器人系统</dt><dd>ROS 2 · Isaac Sim / Isaac Lab · cuRobo · 手眼标定 · 抓取规划</dd></div>
+    <div><dt>算法与开发</dt><dd>Python · C/C++ · PyTorch · YOLO / SAM / GraspNet · Linux · Git · Docker · CUDA · Hugging Face Hub</dd></div>
+    <div><dt>真机实践</dt><dd>Piper · 睿尔曼机械臂 · SO-Arm101 · Mercury X1 · Unitree Go2</dd></div>
+  </dl>
+</section><section class="chapter" id="publications" aria-labelledby="publications-title"><div class="chapter-heading"><h2 id="publications-title">学术论文<span class="section-english">Publications</span></h2><a class="section-link" href="https://scholar.google.com.hk/citations?user=_re0B1UAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar ↗</a></div><div class="chapter-body publications-list">
+    <article class="publication" id="tea-paper"><span class="author-role first-author">第一作者</span><div><h3>Research on tea buds detection based on optimized YOLOv5s</h3><p class="venue">IET Image Processing</p></div></article>
+    <article class="publication"><span class="author-role">第三作者</span><div><h3>Tree species identification based on convolutional neural network and feature fusion</h3><p class="venue">Computers and Electronics in Agriculture</p></div></article>
+    <article class="publication"><span class="author-role">第二作者</span><div><h3>Design on a Pickup Device for Hazardous Chemical Storage Robot</h3><p class="venue">International Conference on Control and Robotics</p></div></article>
+    <article class="publication"><span class="author-role">第二作者</span><div><h3>A Multi-attribute Fusion Comprehensive Intensity Index (ITCS) Construction Method for Typhoon Disaster Chain Prediction</h3><p class="venue">2025 International Conference on Advanced Computing and Intelligent Robotics Applications</p></div></article>
+  </div></section>
+
+  <section class="chapter" id="education" aria-labelledby="education-title"><div class="chapter-heading"><h2 id="education-title">教育背景<span class="section-english">Education</span></h2></div><div class="chapter-body education-grid"><article><p class="item-date">2024.09 — 至今</p><h3>华南理工大学</h3><p>电子信息 · 硕士研究生（推免）</p><p class="muted">国家奖学金 1 次 · 校内奖学金 3 次</p></article><article><p class="item-date">2020.09 — 2024.06</p><h3>华南农业大学</h3><p>人工智能 · 本科（专业第一）</p><p class="muted">国家奖学金 3 次 · 校内奖学金 6 次 · 本科综合测评排名 1/548</p></article></div></section>
+  <section class="chapter" id="awards" aria-labelledby="awards-title"><div class="chapter-heading"><h2 id="awards-title">荣誉与认证<span class="section-english">Honors</span></h2></div><div class="chapter-body">
+    <p class="scholarship-summary"><strong>4 次国家奖学金</strong><span> · 9 次校内奖学金</span></p><ul class="honors-list"><li id="robotac-award"><span>第25届 ROBOTAC AIROBOTIC 创新挑战赛 · 单臂组</span><strong>全国一等奖</strong></li><li><span>世界机器人大赛（WRCF）总决赛</span><strong>一等奖 · 全能奖</strong></li><li id="robomaster-award"><span>RoboMaster 2022 机甲大师超级对抗赛</span><strong>全国赛、南部赛区一等奖</strong></li><li><span>AI Robot 仿真开发挑战赛</span><strong>一等奖</strong></li><li><span>第25届 ROBOCON「武林探秘」· 崇武探幽技能赛</span><strong>一等奖</strong></li><li><span>第25届 ROBOCON「武林探秘」· 竞技赛、九宫藏宝技能赛</span><strong>二等奖</strong></li><li><span>睿抗机器人开发者大赛（RAICOM）</span><strong>三等奖</strong></li><li><span>全国大学生数学建模竞赛</span><strong>广东省二等奖</strong></li><li><span>MCM/ICM 国际大学生数学建模竞赛</span><strong>Honorable Mention</strong></li><li><span>大湾区杯数学建模竞赛</span><strong>三等奖</strong></li><li><span>中国国际大学生创新大赛</span><strong>优胜奖</strong></li></ul>
+    <div class="credential"><div><h3>NVIDIA DLI 认证讲师</h3><p>使用 NVIDIA Isaac 加速机器人开发<br>使用 NVIDIA Isaac 模拟、训练、验证和部署端到端机器人开发工作流</p></div></div>
+    <p class="honors-note">国家级大学生创新创业训练计划项目负责人 · 优秀毕业生 · CET-6</p>
+  <div class="additional-content"><p class="detail-heading">其他资质</p><p class="additional-body">高中数学教师资格证 · 高中物理教师资格证</p></div></div></section>
+
+  <footer><div><strong>李观丽 <span>Guanli Li</span></strong><a href="mailto:guanlilee1016@163.com">guanlilee1016@163.com</a></div><div class="footer-meta"><span>更新于 2026.09.08</span><a href="#top">回到顶部 ↑</a></div></footer>
+</main>
+</div></body></html>
